@@ -1,18 +1,24 @@
 {
 	"name": "dockermultipleproject",
-	"version": "1.0.0",
+	"version": "2.0.0",
 	"description": "## Development Require ``` - Docker - Terminal (kitty 😉) ```",
-	"workspaces": ["client", "server"],
+	"packageManager": "npm@11.6.2",
+	"workspaces": [
+		"apps/*"
+	],
 	"scripts": {
-		"dev": "concurrently \"npm run dev --workspace=client\" \"npm run dev --workspace=server\"",
 		"lint": "biome check .",
 		"lint:fix": "biome check . --write",
-		"reload": "rm -rf node_modules/ && rm -rf server/node_modules/ && rm -rf client/node_modules/"
+		"lint:prettier": "prettier --write ./apps/**/*.{tsx,js,jsx,json,md,html,css}",
+		"lint:all": "npm run lint:prettier && npm run lint:fix",
+		"dev": "turbo run dev",
+		"build": "turbo run build"
 	},
 	"devDependencies": {
-		"@biomejs/biome": "1.9.4",
-		"concurrently": "9.1.2",
+		"@biomejs/biome": "2.3.14",
 		"husky": "9.1.7",
-		"jav-blast-setup": "1.0.30"
+		"jav-blast-setup": "1.0.31",
+		"prettier": "3.8.1",
+		"turbo": "2.8.3"
 	}
 }

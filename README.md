@@ -8,6 +8,7 @@
 
 ## Run with Docker (Optional)
 ```
+docker compose build
 docker compose up
 ```
 

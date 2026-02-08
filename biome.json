@@ -1,12 +1,21 @@
 {
 	"$schema": "./node_modules/@biomejs/biome/configuration_schema.json",
+	"assist": { "actions": { "source": { "organizeImports": "on" } } },
 	"linter": {
 		"enabled": true,
 		"rules": {
-			"recommended": true
+			"recommended": true,
+			"suspicious": {
+				"noExplicitAny": "off"
+			}
 		}
 	},
 	"files": {
-		"ignore": ["./build/*.js", "./build/*.ts", "./client/dist/*.js"]
+		"includes": [
+			".vscode/**",
+			"./client/src/**/*.ts",
+			"./server/src/**/*.ts",
+			"./*.json"
+		]
 	}
 }

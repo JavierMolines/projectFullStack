@@ -2,7 +2,7 @@ FROM node:lts-alpine AS builder
 
 WORKDIR /prepare
 
-COPY ./server/ ./
+COPY ./apps/server/ ./
 
 RUN npm install
 RUN npm run build
