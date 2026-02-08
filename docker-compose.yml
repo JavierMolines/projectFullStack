@@ -11,4 +11,4 @@ services:
     build:
       dockerfile: ./apps/server/Dockerfile
     ports:
-      - 5002:3000
+      - 5002:5002

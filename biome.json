@@ -13,8 +13,8 @@
 	"files": {
 		"includes": [
 			".vscode/**",
-			"./client/src/**/*.ts",
-			"./server/src/**/*.ts",
+			"./apps/client/src/**/*.ts",
+			"./apps/server/src/**/*.ts",
 			"./*.json"
 		]
 	}

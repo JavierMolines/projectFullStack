@@ -25,10 +25,10 @@ npm run dev
 
 ```bash
 # Client project run in port
-curl http://localhost:5173 # Docker port 5001
+curl http://localhost:5001
 ```
 
 ```bash
 # Server project run in port
-curl http://localhost:3000 # Docker port 5002
+curl http://localhost:5002
 ```

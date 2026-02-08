@@ -19,4 +19,4 @@ RUN npm install --production
 
 CMD [ "npm", "run", "start" ]
 
-EXPOSE 3000
+EXPOSE 5002
