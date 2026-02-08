@@ -1,24 +1,27 @@
 # Composer Template Project
 
-## Development Require
+
+### Development Require
 ```
-- Docker
 - Terminal (kitty 😉)
+- Node Package Manager
+- NVM
 ```
 
-## Run with Docker (Optional)
+## [ OPTIONAL ] Run with Docker
 ```
 docker compose build
 docker compose up
 ```
 
-## Run project locally
+### Run project locally
 ```bash
+nvm use
 npm install
 npm run dev
 ```
 
-## Instances running
+### Instances running
 
 ```bash
 # Client project run in port

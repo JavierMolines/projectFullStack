@@ -1,4 +1,4 @@
-FROM node:lts-alpine AS builder
+FROM node:krypton-alpine AS builder
 
 WORKDIR /prepare
 
@@ -7,7 +7,7 @@ COPY ./apps/server/ ./
 RUN npm install
 RUN npm run build
 
-FROM node:lts-alpine
+FROM node:krypton-alpine
 
 WORKDIR /backend
 
